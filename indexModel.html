@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-dpr="1" style="font-size: 54px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>indexModel</title>
+    <script src="/mall/plugin/jquery-3.2.1.min.js"></script>
+</head>
+
+<body style="font-size: 20px;">
+    <header>
+        <div>
+            <input type="button" value="oc原生Alert" onclick="deliverValue('来自HTML中的Alert信息')">
+        </div>
+
+        <div>
+            <input type="button" value="Native传值" onclick="finishActivity()">
+        </div>
+
+        <div>
+            <input type="button" value="jsCallTestggggg" onclick="callShare()">
+        </div>
+    </header>
+
+    <script>
+        var callShare = function() {
+
+            alert(testobject.x);
+
+            // 修改model 的 x 的属性值
+            testobject.x=1000;
+            //var aaa = Native.testggggg("aaa");
+            // 调用model 的description的方法打印出x的值
+            testobject.description();
+            alert(aaa);
+        }
+    </script>
+    <script src="/mall/js/rem.js"></script>
+</body>
+</html>

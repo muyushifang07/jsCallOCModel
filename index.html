@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-dpr="1" style="font-size: 54px;"><head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+            <title>首页</title>
+            <script src="/mall/plugin/jquery-3.2.1.min.js"></script>
+</head>
+<body style="font-size: 12px;">
+    <header>
+        <div>
+            <input type="button" value="oc原生Alert" onclick="deliverValue('来自HTML中的Alert信息')">
+        </div>
+        <input class="back" type="button" value="Native传值" onclick="finishActivity()">
+        <input type="button" value="jsCallTestggggg" onclick="callShare()">
+
+        <span class="center">百果园</span>
+        <div class="posi" style="display: none;"></div>
+    </header>
+
+<script>
+    var callShare = function() {
+        var aaa = Native.testggggg("aaa");
+        alert(aaa);
+    }
+</script>
+
+    <script src="/mall/js/rem.js"></script>
+</body></html>
